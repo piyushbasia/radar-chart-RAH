@@ -1,9 +1,9 @@
 import streamlit as st
-
-st.title("Radar Chart")
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib import patches
+
+st.title("Radar Chart")
 
 # Optional: make placements reproducible while testing
 np.random.seed(42)
@@ -118,4 +118,4 @@ ax.set_ylim(-max_radius - 1, max_radius + 1)
 ax.set_title("AI Tools Landscape", fontsize=20, weight='bold', pad=20)
 ax.axis('off')
 
-plt.show()
+st.pyplot(plt)
